@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style2.css" />
+    <style>
+        /* Custom Styles */
+        ul.nav-tabs{
+            width: 140px;
+            margin-top: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+        }
+        ul.nav-tabs li{
+            margin: 0;
+            border-top: 1px solid #ddd;
+        }
+        ul.nav-tabs li:first-child{
+            border-top: none;
+        }
+        ul.nav-tabs li a{
+            margin: 0;
+            padding: 8px 16px;
+            border-radius: 0;
+        }
+        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+            color: #fff;
+            background: #0088cc;
+            border: 1px solid #0088cc;
+        }
+        ul.nav-tabs li:first-child a{
+            border-radius: 4px 4px 0 0;
+        }
+        ul.nav-tabs li:last-child a{
+            border-radius: 0 0 4px 4px;
+        }
+        ul.nav-tabs.affix{
+            top: 30px; /* Set the top position of pinned element */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" style="opacity:0.8;background-color: #fafafa;border-style: none;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">欢迎进入网站</a>
+        </div>
+
+        <!-- 左上角的导航 -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav" >
+                <li ><a href="#" style="color: black;">主页<span class="sr-only">(current)</span></a></li>
+                <li class="dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: black;">视频 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">电影</a></li>
+                        <li><a href="#">剧集</a></li>
+                        <li><a href="#">动画</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">更多..</a></li>
+                    </ul>
+                </li>
+                <li data-toggle="modal" data-target="#about"><a href="#"  style="color: black;">关于</a></li>
+            </ul>
+
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索..">
+                    <button type="button" class="btn btn-default">Go</button>
+                </div>
+            </form>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li data-toggle="modal" data-target="#signin-signup-tab" id="signin-button"><a href="../html/login.html" >登陆</a></li>
+                <li data-toggle="modal" data-target="#signin-signup-tab" id="signup-button"><a href="../html/Register.html" >注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 导航背景-->
+<div class="jumbotron text-center " style="margin-bottom:0;background-image:url(../img/b.jpg);background-size:cover;">
+    <h3>Welcome！</h3>
+    <p>hello summer</p>
+</div>
+
+<!-- 第二导航栏-->
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" >
+        <ul class="nav navbar-nav" >
+            <li ><a href="#" style="color: black;">首页<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">直播<span class="sr-only">(current)</span></a></li>
+            <li ><a href="../html/video.html" style="color: black;">电影<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">剧集<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">动画<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">音乐<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">游戏<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">广告<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">时尚<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">科技<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">发电站<span class="sr-only">(current)</span></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- 图片轮播-->
+<div class="container" >
+    <div class="row">
+        <div class="col-md-8">
+            <div class="container-fluid">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0"
+                            class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="../img/slide0.jpg" alt="First slide" style="width:100%;">
+                        </div>
+                        <div class="item">
+                            <img src="../img/slide.jpg" alt="Second slide" style="width:100%;">
+                        </div>
+                        <div class="item">
+                            <img src="../img/slide2.jpg" alt="Third slide" style="width:100%;">
+                        </div>
+                    </div>
+                    <div><p style="text-align: center;color: black;"><a href="http://tv.cctv.com/live/cctv5/" style="color: black;">正在直播世界杯 </a></p></div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">
+                            <img src="../img/游戏1.jpg"
+                                 alt="通用的占位符缩略图">
+                            <div class="caption">
+
+                                <p>《底特律：变人》角色性格及剧情主旨详解</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">
+                            <img src="../img/游戏2.jpg"
+                                 alt="通用的占位符缩略图">
+                            <div class="caption">
+
+                                <p>ESL One贝洛奥里藏特第二天最佳时刻精彩集锦</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">
+                            <img src="../img/游戏3.jpg"
+                                 alt="通用的占位符缩略图">
+                            <div class="caption">
+
+                                <p>文森特：下路再遇小情侣！怕是又要被打分手了！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="thumbnail">
+                            <img src="../img/游戏4.jpg"
+                                 alt="通用的占位符缩略图">
+                            <div class="caption">
+
+                                <p>锐雯与亚索的深情对白 只有光明笼罩时 才有爱的领悟</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 电影向导-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8" style="background-color: white;">
+            <a href="#" class="btn btn-info btn-lg">
+                <span class="glyphicon glyphicon-play-circle"></span> 电影
+            </a>&nbsp;&nbsp;经典情节，高分剧情，一切尽在掌握！
+            <hr>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+
+<!-- 电影版块-->
+<div class="container">
+    <div class="row">
+        <!-- 电影视频-->
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/1.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">机动战士高达THE ORIGIN 赤色彗星诞生</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/2.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">昆池岩</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/3.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">寻梦环游记</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/4.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">马戏之王</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/5.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">祖宗十八代</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/6.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">小萝莉的猴神大叔</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/7.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">湮灭</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/8.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">不良街区</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 电影资讯-->
+        <div class="col-md-4">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3" >
+                    <ul class="nav navbar-nav" >
+                        <li ><a href="#" style="color: black;">2017年高分获奖剧情《羞辱》BD中英双字幕<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">2018年科幻动作《狂暴巨兽》HD中英双字幕<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">2018年剧情音乐《超乎想象》BD中英双字幕<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">2018年惊悚动作《金蝉脱壳2》BD中英双字幕<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">2018年奇幻喜剧《捉妖记2》BD国粤双语中字<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">2018年动画喜剧《熊出没·变形记》HD国语中字<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">2018年吴镇宇古天乐剧情《脱皮爸爸》HD国语中字<span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 剧集向导-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8" style="background-color: white;">
+            <hr>
+            <a href="#" class="btn btn-info btn-lg">
+                <span class="glyphicon glyphicon-play-circle"></span> 番剧
+            </a>&nbsp;&nbsp;一大波番剧正在来袭！
+            <hr>
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+    </div>
+</div>
+
+<!-- 剧集版块-->
+<div class="container" >
+    <div class="row">
+        <!-- 剧集视频-->
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/d1.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">东京食尸鬼：re</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/d2.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">机动战士高达THE ORIGIN 赤色彗星诞生</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/d3.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">Unnatural</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/d4.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">哥哥太爱我了怎么办</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/d5.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">食戟之灵 餐之皿</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/d6.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">我们是X</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/d7.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">银魂</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="../img/d8.jpg"
+                             alt="通用的占位符缩略图">
+                        <div class="caption">
+
+                            <p align="center">海贼王特别篇：黄金之心</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 剧集资讯-->
+        <div class="col-md-4">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3" >
+                    <ul class="nav navbar-nav" >
+                        <li ><a href="#" style="color: black;">超能力女儿<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">我的英雄学院<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">戒律的复活<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">Megalo Box<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">宅男腐女恋爱真难<span class="sr-only">(current)</span></a></li>
+                        <li ><a href="#" style="color: black;">鬼灯的冷彻 第二季<span class="sr-only">(current)</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 关于-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>关于我们</h2>
+            <h5>我们是中国最大电影网</h5>
+            <div class="fakeimg">团队组成：</div>
+            <p>莫伟刚 陈贺全 钟跃 刘培彪  陈肇柱 陈晓辉</p>
+            <h3>其他</h3>
+            <p>帮助专栏</p>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">投诉</a></li>
+                <li><a href="#">建议</a></li>
+                <li><a href="../img/0.jpg">联系客服</a></li>
+            </ul>
+            <hr class="hidden-sm hidden-md hidden-lg">
+        </div>
+        <div class="col-sm-8">
+            <h2>电影</h2>
+            <h5>中国最大电影网</h5>
+            <div class="fakeimg">图像</div>
+            
+            <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+            <br>
+            <h2>团队</h2>
+            <h5>团队分工</h5>
+            <div class="fakeimg">图像</div>
+            
+            <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+        </div>
+    </div>
+</div>
+<footer>
+<div class="container text-center" style="margin-bottom:0">
+    <p>友情链接 | 投注 | 版权投诉</p>
+    <p>中ICP 备12345678. © 2018-8102 司公限有. Powered by Bootstrap.</p>
+</div>
+</footer>
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+</html>

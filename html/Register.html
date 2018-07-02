@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            <title>Title</title>
+            <link rel="stylesheet" href="../css/bootstrap.min.css">
+            <link rel="stylesheet" href="../css/style2.css.css">
+            <style>
+                /* Custom Styles */
+                ul.nav-tabs{
+                    width: 140px;
+                    margin-top: 20px;
+                    border-radius: 4px;
+                    border: 1px solid #ddd;
+                    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+                }
+                ul.nav-tabs li{
+                    margin: 0;
+                    border-top: 1px solid #ddd;
+                }
+                ul.nav-tabs li:first-child{
+                    border-top: none;
+                }
+                ul.nav-tabs li a{
+                    margin: 0;
+                    padding: 8px 16px;
+                    border-radius: 0;
+                }
+                ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+                    color: #fff;
+                    background: #0088cc;
+                    border: 1px solid #0088cc;
+                }
+                ul.nav-tabs li:first-child a{
+                    border-radius: 4px 4px 0 0;
+                }
+                ul.nav-tabs li:last-child a{
+                    border-radius: 0 0 4px 4px;
+                }
+                ul.nav-tabs.affix{
+                    top: 30px; /* Set the top position of pinned element */
+                }
+            </style>
+        </head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" style="opacity:0.8;background-color: #fafafa;border-style: none;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.bilibili.com/video/av9199431/">欢迎进入网站</a>
+        </div>
+
+        <!-- 左上角的导航 -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav" >
+                <li ><a href="index.html" style="color: black;">主页<span class="sr-only">(current)</span></a></li>
+                <li class="dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: black;">视频 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="2.html">电影</a></li>
+                        <li><a href="3.html">剧集</a></li>
+                        <li><a href="2.html">动画</a></li>
+                        <li class="divider"></li>
+                        <li><a href="3.html">更多..</a></li>
+                    </ul>
+                </li>
+                <li data-toggle="modal" data-target="#about"><a href="#"  style="color: black;">关于</a></li>
+            </ul>
+
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索..">
+                    <button type="button" class="btn btn-default">Go</button>
+                </div>
+            </form>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li data-toggle="modal" data-target="#signin-signup-tab" id="signin-button"><a href="login.html" >登陆</a></li>
+                <li data-toggle="modal" data-target="#signin-signup-tab" id="signup-button"><a href="Register.html" >注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 导航背景-->
+<div class="jumbotron text-center " style="margin-bottom:0;background-image:url(../img/b.jpg);background-size:cover;">
+    <h3>Welcome！</h3>
+    <p>hello summer</p>
+</div>
+
+<div class="container">
+    <hr>
+    <div class="row">
+
+        <div class="col-md-6 col-md-offset-3">
+
+                <h3>开始创建您的账号</h3>
+                <form>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">用户名：</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">密码：</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">确认密码：</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请再次输入密码">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">邮箱：</label>
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="请输入邮箱地址">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">注册</button>
+                </form>
+
+        </div>
+    </div>
+    <hr>
+</div>
+
+
+
+<!-- 关于-->
+
+
+<div class="jumbotron text-center" style="margin-bottom:0;">
+    <p>友情链接 | 投注 | 版权投诉</p>
+    <p>中ICP 备12345678. © 2018-8102 司公限有. Powered by Bootstrap.</p>
+</div>
+
+
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

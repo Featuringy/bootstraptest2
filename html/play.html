@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style2.css.css">
+    <style>
+        /* Custom Styles */
+        ul.nav-tabs{
+            width: 140px;
+            margin-top: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+        }
+        ul.nav-tabs li{
+            margin: 0;
+            border-top: 1px solid #ddd;
+        }
+        ul.nav-tabs li:first-child{
+            border-top: none;
+        }
+        ul.nav-tabs li a{
+            margin: 0;
+            padding: 8px 16px;
+            border-radius: 0;
+        }
+        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+            color: #fff;
+            background: #0088cc;
+            border: 1px solid #0088cc;
+        }
+        ul.nav-tabs li:first-child a{
+            border-radius: 4px 4px 0 0;
+        }
+        ul.nav-tabs li:last-child a{
+            border-radius: 0 0 4px 4px;
+        }
+        ul.nav-tabs.affix{
+            top: 30px; /* Set the top position of pinned element */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" style="opacity:0.8;background-color: #fafafa;border-style: none;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.bilibili.com/video/av9199431/">欢迎进入网站</a>
+        </div>
+
+        <!-- 左上角的导航 -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav" >
+                <li ><a href="index.html" style="color: black;">主页<span class="sr-only">(current)</span></a></li>
+                <li class="dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: black;">视频 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="2.html">电影</a></li>
+                        <li><a href="3.html">剧集</a></li>
+                        <li><a href="2.html">动画</a></li>
+                        <li class="divider"></li>
+                        <li><a href="3.html">更多..</a></li>
+                    </ul>
+                </li>
+                <li data-toggle="modal" data-target="#about"><a href="#"  style="color: black;">关于</a></li>
+            </ul>
+
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索..">
+                    <button type="button" class="btn btn-default">Go</button>
+                </div>
+            </form>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li data-toggle="modal" data-target="#signin-signup-tab" id="signin-button"><a href="login.html" >登陆</a></li>
+                <li data-toggle="modal" data-target="#signin-signup-tab" id="signup-button"><a href="Register.html" >注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 导航背景-->
+<div class="jumbotron text-center " style="margin-bottom:0;background-image:url(../img/b.jpg);background-size:cover;">
+    <h3>Welcome！</h3>
+    <p>hello summer</p>
+</div>
+
+<!-- 第二导航栏-->
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" >
+        <ul class="nav navbar-nav" >
+            <li ><a href="index.html" style="color: black;">首页<span class="sr-only">(current)</span></a></li>
+            <li ><a href="3.html" style="color: black;">直播<span class="sr-only">(current)</span></a></li>
+            <li ><a href="2.html" style="color: black;">电影<span class="sr-only">(current)</span></a></li>
+            <li ><a href="3.html" style="color: black;">剧集<span class="sr-only">(current)</span></a></li>
+            <li ><a href="2.html" style="color: black;">动画<span class="sr-only">(current)</span></a></li>
+            <li ><a href="3.html" style="color: black;">音乐<span class="sr-only">(current)</span></a></li>
+            <li ><a href="2.html" style="color: black;">游戏<span class="sr-only">(current)</span></a></li>
+            <li ><a href="3.html" style="color: black;">广告<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">时尚<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">科技<span class="sr-only">(current)</span></a></li>
+            <li ><a href="#" style="color: black;">发电站<span class="sr-only">(current)</span></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- 广告-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12" style="background-color: white;background-image: url(../img/slide2.png)">
+                <h3><a href="http://tv.cctv.com/live/cctv5/">广告招租，让我们用爱发电</a></h3><h6><a>联系我们020-64568755</a></h6>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<!-- 视频播放-->
+<div class="container">
+   <div class="row">
+       <div class="col-md-8" >
+           <div class="container-fluid">
+               <video width="100%" controls="controls">
+                    <source src="../video/a.mp4">
+               </video>
+           </div>
+       </div>
+       <div class="col-md-4" style="background-color:#faf9f1;">
+           <div class="container-fluid">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+               </div>
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3" >
+                   <ul class="nav navbar-nav" >
+                       <li class="col-md-12"><a href="#" style="color: black;">第一集&nbsp;&nbsp;<span class="sr-only">(current)</span></a></li>
+                       <li class="col-md-12"><a href="#" style="color: black;">第二集&nbsp;&nbsp;<span class="sr-only">(current)</span></a></li>
+                       <li class="col-md-12"><a href="#" style="color: black;">第三集<span class="sr-only">(current)</span></a></li>
+                       <li class="col-md-12"><a href="#" style="color: black;">第四集<span class="sr-only">(current)</span></a></li>
+                       <li class="col-md-12"><a href="#" style="color: black;">第五集<span class="sr-only">(current)</span></a></li>
+                       <li class="col-md-12"><a href="#" style="color: black;">第六集<span class="sr-only">(current)</span></a></li>
+                       <li class="col-md-12"><a href="#" style="color: black;">第七集<span class="sr-only">(current)</span></a></li>
+                       <li class="col-md-12"><a href="#" style="color: black;">第八集<span class="sr-only">(current)</span></a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+
+
+<!-- 广告
+<div class="container">
+    <hr>
+    <div class="row">
+        <div class="col-md-12" style="background-image: url(../img/slide1.jpg);">
+            <h2 style="color: white;color: transparent;">为世界杯干杯！</h2>
+            <h2> </h2>
+        </div>
+    </div>
+    <hr>
+</div>
+-->
+<hr>
+
+<!-- 视频推荐-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h4>看过该视频的还喜欢</h4>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="myCarousel" class="carousel slide pad_010 b_k" data-ride="carousel">
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner bor_btm">
+                    <div class="item active" >
+                        <div class="pic">
+                            <img src="../img/1.jpg" class="col-md-3">
+                            <img src="../img/2.jpg" class="col-md-3">
+                            <img src="../img/3.jpg" class="col-md-3">
+                            <img src="../img/4.jpg" class="col-md-3">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="../img/1.jpg" class="col-md-3">
+                            <img src="../img/2.jpg" class="col-md-3">
+                            <img src="../img/3.jpg" class="col-md-3">
+                            <img src="../img/4.jpg" class="col-md-3">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="../img/1.jpg" class="col-md-3">
+                            <img src="../img/2.jpg" class="col-md-3">
+                            <img src="../img/3.jpg" class="col-md-3">
+                            <img src="../img/4.jpg" class="col-md-3">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- 轮播（Carousel）导航
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color: transparent"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color: transparent"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- 评论-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h4>评论</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-8">
+            <textarea class="col-md-10 col-sm-10 col-xs-10" style="height: 100px;resize: none;"></textarea>
+            <button class="col-md-2 col-sm-2 col-xs-2" style="height: 100px;">发表</button>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <hr>
+</div>
+
+<!-- 评论区-->
+<div class="container">
+    <div class="col-md-8" >
+            <ul class="media-list" >
+                <li class="media" >
+                    <a class="media-left" href="#">
+                        <img class="media-object" src="../img/11.JPG"
+                             alt="通用的占位符图像" >
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">中国联通</h4>
+                        <p>这是广告</p>
+                    </div>
+                </li>
+                <li class="media">
+                    <a class="media-left" href="#">
+                        <img class="media-object" src="../img/12.JPG"
+                             alt="通用的占位符图像">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">中国石化</h4>
+                        <p>这是广告</p>
+                    </div>
+                </li>
+                <li class="media">
+                    <a class="media-left" href="#">
+                        <img class="media-object" src="../img/13.JPG"
+                             alt="通用的占位符图像">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">中国电信</h4>
+                        <p>这是广告</p>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+
+
+<!-- 关于-->
+
+
+<div class="jumbotron text-center" style="margin-bottom:0;">
+    <p>友情链接 | 投注 | 版权投诉</p>
+    <p>中ICP 备12345678. © 2018-8102 司公限有. Powered by Bootstrap.</p>
+</div>
+
+
+</body>
+<script>
+    $(document).ready(function(){
+        $('#myCarousel').carousel();
+    })
+</script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+</html>
